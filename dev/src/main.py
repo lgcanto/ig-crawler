@@ -23,7 +23,7 @@ password.send_keys(IG_PASSWORD)
 
 login_button.click()
 
-time.sleep(2) # wait until everything loads
+time.sleep(3) # wait until everything loads
 
 if 'not-logged-in' not in driver.page_source and 'logged-in' in driver.page_source:
     print('Logged in')

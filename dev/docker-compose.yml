@@ -1,10 +1,9 @@
 version: "3.4"
 
 services:
-  python-module:
-    # image: python-module
-    # build: ./python-module/.
-    image: igcrawler:0.0.2
+  igcrawler:
+    image: igcrawler
+    build: ./python-module/.
     shm_size: 2gb
     env_file:
       - ./env/python-module.env
